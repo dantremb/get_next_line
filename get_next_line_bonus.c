@@ -6,7 +6,7 @@
 /*   By: dantremb <dantremb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 09:17:02 by pirichar          #+#    #+#             */
-/*   Updated: 2022/04/26 23:14:18 by dantremb         ###   ########.fr       */
+/*   Updated: 2022/04/27 11:01:32 by dantremb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*get_next_line(int fd)
 {
-	static char		*box[4096];
+	static char		*box[OPEN_MAX];
 	char			*ret;
 
 	if (BUFFER_SIZE < 1 || fd < 0)
