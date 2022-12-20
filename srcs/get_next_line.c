@@ -6,11 +6,14 @@
 /*   By: dantremb <dantremb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/14 09:17:02 by pirichar          #+#    #+#             */
-/*   Updated: 2022/05/18 00:53:01 by dantremb         ###   ########.fr       */
+/*   Updated: 2022/12/20 08:46:41 by dantremb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/get_next_line.h"
+
+#undef BUFFER_SIZE
+#define BUFFER_SIZE 1
 
 char	*get_next_line(int fd)
 {
